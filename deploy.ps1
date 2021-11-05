@@ -6,7 +6,7 @@ param (
 )
 
 Install-PackageProvider -Name NuGet -Force
-Install-Module Az -Force -Confirm:$false
+Install-Module Az.Computer,Az.Network -Force -Confirm:$false
 
 $rgName                 = 'Connectivity'
 $location               = 'AustraliaEast'
